@@ -44,7 +44,7 @@
 					options.key,
 					options.identifier,
 					false, // tunneled = true
-					['-v']
+					['-v'].concat(options.args)
 				);
 			}
 			else
@@ -105,7 +105,7 @@
 					options.key,
 					options.identifier,
 					true, // tunneled = true
-					['-v']
+					['-v'].concat(options.args)
 				);
 
 				// keep actives tunnel in memory for stop task
